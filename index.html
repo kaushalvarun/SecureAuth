@@ -24,11 +24,14 @@
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" required>
             </div>
-            <!-- <div class="form-group">
-                <label for="captcha">Captcha:</label>
-                <input type="text" id="captcha" name="captcha" placeholder="Enter captcha" required>
-                 Placeholder for captcha image 
-            </div> -->
+            <div class="form-group">
+                <div id="catchaContainer">
+                    <canvas id="captchaCanvas" width="250" height="70"></canvas>
+                    <br>
+                    <label for="captchaInput">Enter Captcha:</label>
+                    <input type="text" id="captchaInput" placeholder="Enter Captcha" required>
+                </div>
+            </div>
             <div class="form-group">
                 <button type="submit">Login</button>
             </div>
@@ -39,5 +42,4 @@
     </div>
 
 </body>
-
 </html>
