@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel = "stylesheet" href = "css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+</head>
+
+<body>
+    <div class="home-container">
+        <header>
+            <h2 id="userEmail"></h2> 
+        </header>
+        <main>
+            <p>Congrats on solving our captcha and successfully authenticating yourself.</p>
+        </main>
+    </div>
+
+    <script>
+        // Retrieve user email from sessionStorage
+        const userEmail = sessionStorage.getItem('userEmail');
+
+        // Display user email on the page
+        const userEmailElement = document.getElementById('userEmail');
+        if (userEmail) {
+            userEmailElement.textContent = `Welcome ${userEmail}`;
+        }
+    </script>
+    
+</body>
+
+</html>
